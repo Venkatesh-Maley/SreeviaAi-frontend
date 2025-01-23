@@ -1,0 +1,402 @@
+/* General Container Styling */
+.home-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 70px 20px; /* Adjusted for spacing */
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Hero Text Styling */
+.hero-text {
+  max-width: 1000px;
+  max-width: 90%;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Description Text Styling */
+.hero-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: rgb(69, 69, 69);
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  z-index: -1;
+  opacity: 0.1;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.hero-description:hover::before {
+  opacity: 0.2;
+}
+
+/* Services Text Styling */
+.services {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Explore Button Styling */
+.explore-button {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, padding 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Make the button a block element */
+  width: auto; /* Adjust button width */
+  text-align: center; /* Align text in the center */
+  margin-top: 20px; /* Add some spacing on top */
+}
+
+.explore-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Image Styling */
+.hero-image {
+  max-width: 30%;
+  position: relative;
+  margin-top: 30px; /* Add margin-top to push image down */
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-image:hover .hero-banner {
+  transform: scale(1.05);
+}
+
+.button-link {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set text color to white */
+  padding: 16px 14px;
+  font-weight: inherit; /* Inherit font weight from parent element */
+  font-size: inherit; /* Inherit font size from parent element */
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+.button-link:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: white; /* Maintain white color on hover */
+}
+
+.belief-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.belief-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+}
+
+.belief-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.belief-image img {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.belief-image img:hover {
+  transform: scale(1.05);
+}
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+}
+
+.section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #000440;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+  
+}
+/* General Card Styling */
+.enterprise-challenges .challenge-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ea4265, #ff750d);
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.enterprise-challenges .challenge-box:hover {
+  background: #fff;
+  color: transparent;
+}
+
+.enterprise-challenges .challenge-box:hover .challenge-icon,
+.enterprise-challenges .challenge-box:hover .challenge-title,
+.enterprise-challenges .challenge-box:hover .challenge-text {
+  background: linear-gradient(135deg, #ea4265, #ff750d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.enterprise-challenges .challenge-box:hover .challenge-icon {
+  transform: rotate(360deg);
+}
+
+/* Icon Styling */
+.challenge-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Title Styling */
+.challenge-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Text Styling */
+.challenge-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Shadow and Hover Effects */
+.enterprise-challenges .challenge-box:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .challenge-icon {
+    font-size: 2.5rem;
+  }
+
+  .challenge-box {
+    padding: 15px;
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column; /* Stack the content vertically on medium screens */
+    padding: 50px 10px; /* Adjust padding for medium screens */
+  }
+  .hero-text {
+    max-width: 90%;
+    text-align: center; /* Center text on smaller screens */
+  }
+  .hero-image {
+    max-width: 80%; /* Adjust image width */
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 36px; /* Smaller text size for mobile */
+  }
+  .hero-description {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  .hero-image img {
+    width: 100%; /* Ensure image takes full width */
+    margin: 0 auto;
+  }
+  .belief-title {
+    font-size: 2rem; /* Adjust title size for medium screens */
+  }
+
+  .belief-image img {
+    max-width: 100px; /* Adjust image size */
+  }
+}
+
+@media (max-width: 576px) {
+  .belief-title {
+    font-size: 1.6rem; /* Smaller title size for very small screens */
+  }
+  
+  .belief-image img {
+    max-width: 100px; /* Further reduce image size */
+  }
+}
+
+/* General Styles */
+.statistics-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 50px 0;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1 1 250px; /* Ensures each box takes up a flexible width */
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-box h2 {
+  font-size: 1.5rem;
+  color: #000440;
+  margin-bottom: 10px;
+}
+
+.stat-box .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+}
+
+/* On hover, add some effects */
+.stat-box:hover {
+  transform: translateY(-10px);
+}
+
+.stat-box:hover .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: capitalize;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .statistics-container {
+    gap: 20px;
+  }
+
+  .stat-box {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    gap: 10px;
+  }
+
+  .stat-box {
+    flex: 1 1 100%; /* On smaller screens, the boxes stack */
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .stat-box .number {
+    font-size: 2rem;
+  }
+}

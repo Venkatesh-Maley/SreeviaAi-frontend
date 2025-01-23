@@ -1,0 +1,36 @@
+<div class="container news-container">
+  <header class="news-header text-center py-5">
+    <h1>Latest Articles</h1>
+    <p class="intro-text">
+      Stay informed with the latest breakthroughs, updates, and insights from Sreevia AI and the world of Artificial Intelligence.
+    </p>
+  </header>
+
+  <section class="news-content">
+    <h2 class="text-center mb-4">Featured Articles</h2>
+    <div class="row g-4">
+      <!-- News Cards (First 3) -->
+      <div *ngFor="let post of visiblePosts" class="col-md-6 col-lg-4">
+        <div class="card news-card">
+          <img [src]="post.image" alt="news1" class="card-img-top news-image" />
+          <div class="card-body">
+            <h3 class="card-title">{{ post.title }}</h3>
+            <p class="news-description">{{ post.description }}</p>
+            <p class="news-date">Published on: {{ post.date }}</p>
+            <button class="btn read-more">Read More</button>
+          </div>
+        </div>
+      </div>
+  
+      
+    </div>
+  
+    <div class="text-center mt-4">
+      <button (click)="toggleExtraPosts()" class="btn read-more">
+        {{ showExtraPosts ? 'Show Less' : 'Show More' }}
+      </button>
+    </div>
+  </section>
+  
+  
+</div>

@@ -1,0 +1,60 @@
+/* General Styling */
+.careers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.careers-header {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  border-radius: 10px;
+}
+
+.careers-header h1 {
+  font-size: 2.5rem;
+}
+
+.careers-header p {
+  font-size: 1.2rem;
+}
+
+.life-sreevia .life-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.life-image{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.job-card {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #ea4265, #ff750d) 1;
+  border-radius: 10px;
+}
+
+.job-card:hover{
+  transform: scale(1.05);
+}
+.job-card .card-title {
+  font-size: 1.25rem;
+  color: #ff750d;
+}
+
+.apply-button {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.apply-button:hover {
+  background: linear-gradient(90deg, #ff750d, #ea4265);
+  transform: scale(1.05);
+}

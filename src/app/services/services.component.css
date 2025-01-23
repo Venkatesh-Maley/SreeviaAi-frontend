@@ -1,0 +1,262 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.services-header {
+  text-align: center;
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.services-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-header .intro-text {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+/* Header Styles */
+.services-head {
+  text-align: center;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+.services-head h1 {
+  font-size: 40px;
+}
+
+.services-head .intro-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Service Cards */
+.services .service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service:hover {
+  transform: translateY(-10px);
+}
+
+.services .service:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-content {
+  flex: 1;
+  padding: 30px;
+  text-align: left;
+}
+
+.service-content h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ea4265;
+}
+
+.service-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.service-image {
+  flex: 1;
+  max-width: 30%;
+  padding: 10px;
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .services .service {
+    flex-direction: column;
+  }
+
+  .services-header h1 {
+    font-size: 32px;
+  }
+  .services .service-image {
+    display: none;
+  }
+  .testimonial {
+    flex: 0 0 180px;
+  }
+  .testimonial-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .testimonials {
+    padding: 10px;
+  } 
+}
+
+.read-more {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background: linear-gradient(90deg, #ff750d, #ea4265);
+}
+
+/* Service Hover with Gradient Border */
+.services .service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative; /* Needed for the pseudo-element */
+}
+
+/* Add the gradient border using a pseudo-element */
+.services .service::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* Cover the entire card */
+  border-radius: 16px; /* Match the card's border radius */
+  padding: 2px; /* Space for the gradient border */
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Initially hidden */
+}
+
+/* Show the gradient border on hover */
+.services .service:hover::before {
+  opacity: 1;
+}
+
+.services .service-content,
+.services .service-image {
+  position: relative;
+  z-index: 1; /* Ensure content stays above the gradient border */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.testimonials {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  color: #333;
+}
+
+.client-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.core-services {
+  margin-top: 40px;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.core-services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  color: #ea4265;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+}

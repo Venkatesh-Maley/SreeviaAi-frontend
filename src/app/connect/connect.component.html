@@ -1,0 +1,58 @@
+<!-- About Company Section (Above) -->
+<div class="about-company">
+  
+  <!-- Connect With Us Section -->
+  <div class="connect-with-us-container">
+    <div class="row">
+      <!-- Contact Details Section -->
+      <div class="col-md-6 contact-details">
+        <h2>Contact Details</h2>
+        <div class="contact-feilds">
+          <p><strong><i class="fas fa-map-marker-alt"></i></strong> 123 AI Innovations Lane, Tech City</p>
+          <p><strong><i class="fas fa-envelope"></i></strong> contact&#64;sreevia.ai</p>
+          <p><strong><i class="fas fa-phone-alt"></i></strong> +1 234 567 890</p>
+          <p><strong><i class="fas fa-clock"></i></strong> Mon - Fri: 9 AM - 6 PM</p>
+        </div>
+      </div>
+      
+      <!-- Form Section -->
+      <div class="col-md-6 user-form">
+        <h2>Share Your Information</h2>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" [(ngModel)]="formData.name" name="name" class="form-control" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="formData.email" name="email" class="form-control" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" [(ngModel)]="formData.phoneNumber" name="phoneNumber" class="form-control" placeholder="Enter your phone number" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" [(ngModel)]="formData.message" name="message" class="form-control" rows="4" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About Company Section (Below) -->
+  <div class="founders-vision">
+    <div class="founder-info">
+      <div class="quote-container">
+        <h1>Founder's Words</h1>
+        <p class="quote">
+          "At Sreevia AI, we aim to lead the way in artificial intelligence development by offering solutions that empower businesses worldwide. Our vision is to transform the future by bridging the gap between technology and human potential."
+        </p>
+        <p class="founder-name">- Sreenivasulu Gangula</p>
+      </div>
+      <img src="image1.png" alt="Founder" class="founder-image">
+    </div>
+  </div>
+
+  

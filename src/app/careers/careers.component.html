@@ -1,0 +1,69 @@
+<div class="container careers-container">
+  <!-- Header Section -->
+  <div class="careers-header text-center py-5">
+    <h1>Join Our Team</h1>
+    <p class="intro-text">
+      At Sreevia AI, we believe in innovation, collaboration, and excellence. Explore our current opportunities and become part of a team that’s shaping the future.
+    </p>
+  </div>
+
+  <!-- Life at Sreevia Section -->
+  <div class="life-sreevia mt-5 py-4 ">
+    <h2 class="text-center mb-4">Life at Sreevia AI</h2>
+
+    <!-- Image Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5 mb-4">
+        <img src="image1.png" class="img-fluid rounded life-image" alt="Team Collaboration">
+      </div>
+      <div class="col-md-6 col-lg-5 mb-4">
+        <img src="image2.png" class="img-fluid rounded life-image" alt="Innovation at Sreevia">
+      </div>
+    </div>
+
+    <!-- Life at Sreevia AI Content -->
+    <div class="life-content row justify-content-center">
+      <div class="col-lg-10">
+        <div class="life-text p-4 rounded ">
+          <p>
+            At Sreevia AI, we are a community of passionate individuals dedicated to advancing the field of AI. Our workplace is a dynamic blend of innovation, collaboration, and creative thinking. Every member of our team is empowered to contribute, learn, and grow – from AI engineers to designers to data scientists. We thrive on challenges and are committed to building impactful solutions for the future.
+          </p>
+          <p>
+            We pride ourselves on offering a collaborative and inclusive work environment where diverse voices are valued. Sreevia AI isn’t just about the work; it’s about the people who drive it. We make sure that our team members have a healthy work-life balance, with flexible hours and support to achieve both their professional and personal goals.
+          </p>
+          <p>
+            Are you ready to join a cutting-edge organization? Come and be part of our mission to innovate and shape the future of AI technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Job Openings Section -->
+  <section class="careers-content mt-5">
+    <h2 class="text-center mb-4">Current Job Openings</h2>
+    <div class="row g-4">
+      <!-- Job Cards (Visible jobs) -->
+      <div *ngFor="let job of visibleJobs" class="col-md-6 col-lg-4">
+        <div class="card job-card rounded">
+          <div class="card-body">
+            <h3 class="card-title">{{ job.title }}</h3>
+            <p class="job-location"><strong>Location:</strong> {{ job.location }}</p>
+            <p class="job-type"><strong>Type:</strong> {{ job.type }}</p>
+            <p class="job-description">{{ job.description }}</p>
+            <button class="btn apply-button">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <!-- Button to toggle extra jobs visibility -->
+    <div class="text-center mt-4">
+      <button (click)="toggleExtraJobs()" class="btn apply-button">
+        {{ showExtraJobs ? 'Show Less' : 'Show More' }}
+      </button>
+    </div>
+  </section>
+  
+</div>

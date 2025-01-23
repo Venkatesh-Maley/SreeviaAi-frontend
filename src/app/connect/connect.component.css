@@ -1,0 +1,192 @@
+/* About Company Section */
+.about-company {
+    padding: 10px 10px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .about-company h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .about-company p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Connect With Us Container */
+  .connect-with-us-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 20px;
+    background: linear-gradient(90deg, #ea4265, #ff750d);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+/* Contact Details Section */
+.contact-details {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .contact-feilds {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-middle;
+  }
+  
+  /* Contact Fields Paragraphs */
+  .contact-feilds p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  
+    
+  /* Form Section */
+  .user-form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .user-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .submit-button {
+    background: linear-gradient(90deg, #ea4265, #ff750d);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Founder's Vision Section */
+.founders-vision {
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Flexbox Layout for Founder Info */
+  .founder-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Founder Image */
+  .founder-image {
+    width: 300px; /* Adjust size of the image */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* Quote Container */
+  .quote-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Quote Text */
+  .quote {
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Founder's Name */
+  .founder-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .founder-info {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .founder-image {
+      margin-right: 30px;
+    }
+  
+    .quote-container {
+      text-align: left;
+    }
+  
+    .quote {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .founder-name {
+      font-size: 20px;
+    }
+  }
+  
+  

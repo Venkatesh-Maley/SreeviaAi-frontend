@@ -1,0 +1,95 @@
+/* Navbar Logo */
+.navbar-brand .logo {
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff3d0d !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Optional: To remove the margin from the last item */
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Button Styles */
+.btn-gradient {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sticky Navbar and Shadow */
+.navbar {
+  border-bottom: 4px solid #ea4265;
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure navbar stays on top of other elements */
+}
+
+/* Navbar Layout for Smaller Screens */
+@media (max-width: 991px) {
+  /* Ensuring the navbar has full-width space */
+  .navbar-expand-lg .navbar-collapse {
+    text-align: center;
+  }
+
+  /* Logo adjustment for smaller screens */
+  .navbar-brand .logo {
+    height: 35px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px; /* Added spacing between links and button */
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px; /* Vertical spacing between items on small screens */
+  }
+
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust logo size on smaller screens */
+  .navbar-brand .logo {
+    height: 30px;
+  }
+
+  /* Ensuring button is centered on mobile view */
+  .btn-gradient {
+    width: 100%; /* Button takes full width */
+    padding: 12px 0; /* Adjust padding for better appearance */
+    font-size: 18px;
+  }
+}
