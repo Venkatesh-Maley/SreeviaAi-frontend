@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';  // Import HttpClient
 import { HttpClientModule } from '@angular/common/http';  // Add HttpClientModule here
 import { FormsModule } from '@angular/forms'; // Import FormsModule
-import { environment } from '../../environment/environment';
 
 @Component({
   selector: 'app-connect',
