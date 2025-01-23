@@ -19,7 +19,7 @@ export class ConnectComponent {
   };
 
   // API endpoint for the contact form submission
-  private apiUrl = 'https://sreevia-ai-backend.vercel.app/api/create-connect';
+  private apiUrl = 'https://sreevia-ai-backend.vercel.app/api/create/create-connect';
 
   constructor(private http: HttpClient) {}
 
