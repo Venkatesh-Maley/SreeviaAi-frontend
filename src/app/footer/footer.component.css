@@ -57,6 +57,11 @@
   text-decoration: underline; /* Add underline on hover */
 }
 
+.developer-link {
+  color: white;
+  text-decoration: none; 
+}
+
 
 /* Responsive Adjustments (If Needed) */
 @media (max-width: 768px) {
