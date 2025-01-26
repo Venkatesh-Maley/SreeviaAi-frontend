@@ -54,6 +54,15 @@
   z-index: 1030; /* Ensure navbar stays on top of other elements */
 }
 
+.button-link {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set text color to white */
+  padding: 16px 14px;
+  font-weight: inherit; /* Inherit font weight from parent element */
+  font-size: inherit; /* Inherit font size from parent element */
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
 /* Navbar Layout for Smaller Screens */
 @media (max-width: 991px) {
   /* Ensuring the navbar has full-width space */

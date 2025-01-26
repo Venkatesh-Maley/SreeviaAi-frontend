@@ -153,8 +153,6 @@
   color: transparent;
   text-transform: uppercase;
   text-align: center;
-  padding: 30px;
-  margin: 30px;
 }
 
 .belief-images {
@@ -163,8 +161,8 @@
   flex-wrap: wrap;
 }
 
-.belief-image img {
-  max-width: 100px;
+.belief-image img { 
+  max-width: 130px;
   height: auto;
   transition: transform 0.3s ease;
 }
