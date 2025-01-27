@@ -11,8 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent implements OnInit {
-  connections: any[] = []; // Array to hold connection data
-
+  connections: any[] = [];
   constructor(
     private http: HttpClient,
     private localStorageService: LocalStorageService,
@@ -20,11 +19,11 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.fetchConnections(); // Fetch connections on component initialization
+    this.fetchConnections(); 
   }
 
   fetchConnections(): void {
-    this.http.get<any>('http://localhost:8000/api/getAll-connect') // Adjust the URL as necessary
+    this.http.get<any>('https://sreevia-ai-backend.vercel.app/api/getAll-connect')
       .subscribe({
         next: (response) => {
           if (response.success) {
