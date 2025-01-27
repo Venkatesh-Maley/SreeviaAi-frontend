@@ -1,1 +1,25 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <button class="logout-button" (click)="logout()">Logout</button>
+    
+    <table class="connection-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Message</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let connection of connections">
+          <td>{{ connection.name }}</td>
+          <td>{{ connection.email }}</td>
+          <td>{{ connection.phoneNumber }}</td>
+          <td>{{ connection.message }}</td>
+          <td>{{ connection.createdAt}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
