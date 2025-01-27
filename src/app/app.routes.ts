@@ -5,6 +5,7 @@ import { CareersComponent } from './careers/careers.component';
 import { NewsComponent } from './news/news.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ServicesComponent } from './services/services.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: 'careers', component: CareersComponent }, 
     { path: 'services', component: ServicesComponent },
     { path: 'news', component: NewsComponent },
-    { path: 'connect', component: ConnectComponent}
+    { path: 'connect', component: ConnectComponent},
+    { path: 'login', component: LoginComponent}
 ];
