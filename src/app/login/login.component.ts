@@ -24,7 +24,7 @@ export class LoginComponent {
   onLogin() {
     const loginData = { email: this.email, password: this.password };
 
-    this.http.post<{ token: string }>('http://localhost:8000/api/auth/signin', loginData)
+    this.http.post<{ token: string }>('https://sreevia-ai-backend.vercel.app/api/auth/signin', loginData)
       .subscribe({
         next: (response) => {
           // Use LocalStorageService to set the token
