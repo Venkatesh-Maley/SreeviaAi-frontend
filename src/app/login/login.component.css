@@ -20,6 +20,12 @@
     margin-top: 20px; /* Space between the text and image */
 }
 
+.logo-image{
+    width: 300px; 
+    height: auto;
+    margin: 30px;
+}
+
 .login-form {
     flex: 1;
     display: flex;
@@ -97,6 +103,11 @@ button:disabled {
         height: auto;
         margin-top: 20px; /* Space between the text and image */
     }
+    .logo-image{
+        width: 200px; 
+        height: auto;
+        margin: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -115,5 +126,10 @@ button:disabled {
         width: 200px; /* Adjust image size as needed */
         height: auto;
         margin-top: 40px; /* Space between the text and image */
+    }
+    .logo-image{
+        width: 100px; 
+        height: auto;
+        margin: 30px;
     }
 }

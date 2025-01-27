@@ -14,15 +14,15 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'sreevia-frontend';
   isLoginRoute: boolean = false;
+  isDashBoardRoute: boolean = false;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    // Subscribe to router events to detect route changes
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Check if the current route is the login route
         this.isLoginRoute = event.url === '/login';
+        this.isDashBoardRoute = event.url === '/dashboard';
       }
     });
   }
