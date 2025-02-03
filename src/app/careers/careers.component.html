@@ -51,7 +51,7 @@
             <p class="job-location"><strong>Location:</strong> {{ job.location }}</p>
             <p class="job-type"><strong>Type:</strong> {{ job.type }}</p>
             <p class="job-description">{{ job.description }}</p>
-            <button class="btn apply-button">Apply Now</button>
+            <button class="btn apply-button" (click)="applyNow(job)">Apply Now</button>
           </div>
         </div>
       </div>

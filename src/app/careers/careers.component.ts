@@ -10,12 +10,24 @@ import { Component } from '@angular/core';
 export class CareersComponent {
   // Job data (For demonstration, you can replace this with your actual data)
   jobs = [
-    { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.' },
-    { title: 'Data Scientist', location: 'Remote', type: 'Part-Time', description: 'Analyze large datasets to derive actionable insights and build predictive models.' },
-    { title: 'Frontend Developer', location: 'Bangalore', type: 'Full-Time', description: 'Build and maintain the front end of web applications using Angular or React.' },
-    { title: 'Backend Developer', location: 'Pune', type: 'Full-Time', description: 'Design and implement server-side logic using Node.js, Express.js, and MongoDB.' },
-    { title: 'UX/UI Designer', location: 'Remote', type: 'Part-Time', description: 'Design intuitive and engaging user interfaces for web and mobile apps.' },
-    { title: 'Product Manager', location: 'Delhi', type: 'Full-Time', description: 'Lead product development initiatives and collaborate with cross-functional teams.' },
+    { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+     },
+    { title: 'IOS and Android developers', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain IOS and Android Applications',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+    },
+    { title: 'Data Scientist', location: 'Hyderabad', type: 'Full-Time', description: 'Analyze large datasets to derive actionable insights and build predictive models.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+    },
+    { title: 'Frontend Developer', location: 'Hyderabad', type: 'Full-Time', description: 'Build and maintain the front end of web applications using Angular or React.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+     },
+    { title: 'Backend Developer', location: 'Hyderabad', type: 'Full-Time', description: 'Design and implement server-side logic using Node.js, Express.js, and MongoDB.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+    },
+    { title: 'UX/UI Designer', location: 'Hyderabad', type: 'Full-Time', description: 'Design intuitive and engaging user interfaces for web and mobile apps.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+    }
   ];
 
   // Initial visible jobs (First 3)
@@ -36,6 +48,10 @@ export class CareersComponent {
     } else {
       this.visibleJobs = this.jobs.slice(0, 3); // Show only first 3 jobs
     }
+  }
+
+  applyNow(job: any): void {
+    window.open(job.formLink, '_blank');
   }
 
 }
