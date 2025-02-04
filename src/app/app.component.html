@@ -1,10 +1,10 @@
-<ng-container *ngIf="!isLoginRoute && !isDashBoardRoute && !isPageNotFound">
+<ng-container *ngIf="!isLoginRoute && !isDashBoardRoute">
     <app-navbar></app-navbar>
 </ng-container>
   
 <router-outlet></router-outlet>
   
-<ng-container *ngIf="!isLoginRoute && !isDashBoardRoute && !isPageNotFound">
+<ng-container *ngIf="!isLoginRoute && !isDashBoardRoute">
     <app-footer></app-footer>
 </ng-container>
   
