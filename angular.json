@@ -84,17 +84,9 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets",
               {
-                "glob": "robots.txt",
-                "input": "src/assets",
-                "output": "/"
-              },
-              {
-                "glob": "sitemap.xml",
-                "input": "src/assets",
-                "output": "/"
+                "glob": "**/*",
+                "input": "public"
               }
             ],
             "styles": [
