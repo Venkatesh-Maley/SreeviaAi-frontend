@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /search?
+Disallow: /?s=
+Disallow: /*?*
+
+Allow: /
+
+Sitemap: https://www.sreeviaai.com/sitemap.xml
