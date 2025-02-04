@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'sreevia-frontend';
   isLoginRoute: boolean = false;
   isDashBoardRoute: boolean = false;
-  isPageNotFound: boolean = false; // Add this flag
+  isPageNotFound: boolean = false;
 
 
   constructor(private router: Router) {}
@@ -25,9 +25,7 @@ export class AppComponent {
       if (event instanceof NavigationEnd) {
         this.isLoginRoute = event.url === '/login';
         this.isDashBoardRoute = event.url === '/dashboard';
-
-        this.isPageNotFound = event.url.startsWith('/404');  // Ensure 404 detection
-
+        this.isPageNotFound = event.url === '/404';
       }
     });
   }

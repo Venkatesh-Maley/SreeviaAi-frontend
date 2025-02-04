@@ -20,7 +20,6 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent},
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
 
-    // Ensure 404 Page is displayed when no other route matches
     { path: '404', component: PageNotFoundComponent },
-    { path: '**', redirectTo: '404' } 
+    { path: '**', redirectTo: '/404' } 
 ];
