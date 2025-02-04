@@ -8,6 +8,7 @@ import { ServicesComponent } from './services/services.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth-service/auth.guard';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -17,5 +18,9 @@ export const routes: Routes = [
     { path: 'news', component: NewsComponent },
     { path: 'connect', component: ConnectComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]}
+    { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
+
+    // Ensure 404 Page is displayed when no other route matches
+    { path: '404', component: PageNotFoundComponent },
+    { path: '**', redirectTo: '404' } 
 ];
