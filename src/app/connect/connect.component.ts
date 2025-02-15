@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';  // Import HttpClient
-import { HttpClientModule } from '@angular/common/http';  // Add HttpClientModule here
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { HttpClient } from '@angular/common/http';  
+import { HttpClientModule } from '@angular/common/http';  
+import { FormsModule } from '@angular/forms';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-connect',
   imports: [HttpClientModule, FormsModule],
-  standalone: true, // Marking the component as standalone
+  standalone: true, 
   templateUrl: './connect.component.html',
   styleUrl: './connect.component.css'
 })
 export class ConnectComponent {
+  constructor(private http: HttpClient, private meta: Meta, private title: Title) {
+    this.title.setTitle('Connect with SreeVia AI | Your AI Solutions Partner');
+    
+    this.meta.updateTag({ name: 'description', content: 'Reach out to SreeVia AI for AI consulting, training, and custom solutions that transform businesses. Contact us at +919848022338 for inquiries.' });
+    this.meta.updateTag({ name: 'keywords', content: 'contact SreeVia AI, AI solutions partner, AI consulting, AI training, custom AI solutions' });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+  }
+
   formData = {
     name: '',
     email: '',
@@ -18,21 +27,15 @@ export class ConnectComponent {
     message: ''
   };
 
-  // API endpoint for the contact form submission
   private apiUrl = 'https://sreevia-ai-backend.vercel.app/api/create-connect';
 
-  constructor(private http: HttpClient) {}
-
-  // Method to handle form submission
   onSubmit(): void {
-    // Make sure form data is valid before sending to backend
     if (this.formData.name && this.formData.email && this.formData.phoneNumber && this.formData.message) {
       this.http.post(this.apiUrl, this.formData)
         .subscribe({
           next: (response) => {
             alert('Your message has been submitted successfully!');
             console.log('Response:', response);
-            // Reset the form after successful submission
             this.resetForm();
           },
           error: (error) => {
@@ -45,7 +48,6 @@ export class ConnectComponent {
     }
   }
 
-  // Method to reset form fields
   resetForm(): void {
     this.formData = {
       name: '',
