@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '../seo-service/seo.service';
 
 @Component({
   selector: 'app-news',
@@ -9,13 +10,16 @@ import { Meta, Title } from '@angular/platform-browser';
   templateUrl: './news.component.html',
   styleUrl: './news.component.css'
 })
-export class NewsComponent {
-  constructor(private meta: Meta, private title: Title) {
+export class NewsComponent implements OnInit {
+  constructor(private meta: Meta, private title: Title, private seoService: SeoService) {
     this.title.setTitle('Latest AI News | SreeVia AI Updates & Innovations');
 
     this.meta.updateTag({ name: 'description', content: 'Stay updated with the latest AI advancements, innovations, and strategic partnerships from SreeVia AI Technologies. Explore news and events now.' });
     this.meta.updateTag({ name: 'keywords', content: 'SreeVia AI news, AI innovations, AI partnerships, AI conferences, AI awards' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+  }
+  ngOnInit(): void {
+    this.seoService.updateCanonicalUrl('https://www.sreeviaai.com/news');
   }
    posts = [
     { title: 'SreeVia Ai recognized by Global C-Suite Community platform', description: 'SreeVia AI Technologies has been recognized with a prestigious award for AI Innovation.', date: 'March 20, 2025', image: 'image1.png' },

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';  
 import { HttpClientModule } from '@angular/common/http';  
 import { FormsModule } from '@angular/forms';
 import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '../seo-service/seo.service';
 
 @Component({
   selector: 'app-connect',
@@ -11,13 +12,17 @@ import { Meta, Title } from '@angular/platform-browser';
   templateUrl: './connect.component.html',
   styleUrl: './connect.component.css'
 })
-export class ConnectComponent {
-  constructor(private http: HttpClient, private meta: Meta, private title: Title) {
+
+export class ConnectComponent implements OnInit {
+  constructor(private http: HttpClient, private meta: Meta, private title: Title, private seoService: SeoService) {
     this.title.setTitle('Connect with SreeVia AI | Your AI Solutions Partner');
     
     this.meta.updateTag({ name: 'description', content: 'Reach out to SreeVia AI for AI consulting, training, and custom solutions that transform businesses. Contact us at +919848022338 for inquiries.' });
     this.meta.updateTag({ name: 'keywords', content: 'contact SreeVia AI, AI solutions partner, AI consulting, AI training, custom AI solutions' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+  }
+  ngOnInit(): void {
+    this.seoService.updateCanonicalUrl('https://www.sreeviaai.com/connect');
   }
 
   formData = {
