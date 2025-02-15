@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-careers',
@@ -8,6 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './careers.component.css'
 })
 export class CareersComponent {
+
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Careers at Sreevia AI | Join Our Team and Shape the Future of AI');
+
+    this.meta.updateTag({ name: 'description', content: 'Explore exciting career opportunities at Sreevia AI. Join our team of AI innovators and grow your career in artificial intelligence, machine learning, and technology-driven solutions.' });
+    this.meta.updateTag({ name: 'keywords', content: 'AI careers, artificial intelligence jobs, machine learning careers, job openings at Sreevia AI, AI engineer jobs, data science jobs, deep learning jobs, technology careers, AI company hiring, careers in AI and ML' });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' }); // Ensure search engines index and follow links
+  }
   // Job data (For demonstration, you can replace this with your actual data)
   jobs = [
     { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.',
