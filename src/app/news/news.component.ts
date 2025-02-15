@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-news',
@@ -9,7 +10,13 @@ import { Component } from '@angular/core';
   styleUrl: './news.component.css'
 })
 export class NewsComponent {
-   // Posts data (For demonstration, you can replace this with your actual data)
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Latest AI News | SreeVia AI Updates & Innovations');
+
+    this.meta.updateTag({ name: 'description', content: 'Stay updated with the latest AI advancements, innovations, and strategic partnerships from SreeVia AI Technologies. Explore news and events now.' });
+    this.meta.updateTag({ name: 'keywords', content: 'SreeVia AI news, AI innovations, AI partnerships, AI conferences, AI awards' });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+  }
    posts = [
     { title: 'SreeVia Ai recognized by Global C-Suite Community platform', description: 'SreeVia AI Technologies has been recognized with a prestigious award for AI Innovation.', date: 'March 20, 2025', image: 'image1.png' },
     { title: 'Strengthening AI through Strategic Partnerships', description: 'Sreevia AI CEO attended the APTA Katalyst Global Business Conference 2025 held in Hyderabad.', date: 'March 18, 2025', image: 'image2.png' },
