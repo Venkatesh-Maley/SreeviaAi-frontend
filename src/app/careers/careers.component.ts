@@ -26,6 +26,9 @@ export class CareersComponent implements OnInit  {
 
   // Job data (For demonstration, you can replace this with your actual data)
   jobs = [
+    { title: 'Web Scraping Developer', location: 'Hyderabad', type: 'Remote /Full-Time/ Freelancer', description: 'Experienced Web Scraping Developers who can efficiently extract, process and automate data from websites.',
+      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
+    },
     { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
      },
@@ -40,10 +43,8 @@ export class CareersComponent implements OnInit  {
      },
     { title: 'Backend Developer', location: 'Hyderabad', type: 'Full-Time', description: 'Design and implement server-side logic using Node.js, Express.js, and MongoDB.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
-    },
-    { title: 'UX/UI Designer', location: 'Hyderabad', type: 'Full-Time', description: 'Design intuitive and engaging user interfaces for web and mobile apps.',
-      formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
     }
+    
   ];
 
   // Initial visible jobs (First 3)
