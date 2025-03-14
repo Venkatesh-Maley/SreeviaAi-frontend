@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* #custom-cursor {
+    width: 32px;
+    height: 32px;
+    background: url('/SreeVia-AI_mini-cur.png') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+  }
+
+body, a, button {
+    cursor: none;
+  } */
