@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth-service/auth.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsComponent } from './products/products.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -17,6 +18,7 @@ export const routes: Routes = [
     { path: 'services', component: ServicesComponent },
     { path: 'news', component: NewsComponent },
     { path: 'connect', component: ConnectComponent},
+    {path: 'products', component: ProductsComponent},
     { path: 'login', component: LoginComponent},
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
 

@@ -1,0 +1,266 @@
+/* Base Styles */
+.products-container,
+.rankify-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.products-header,
+.rankify-header {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+.store-badge {
+  width: 160px;
+  height: auto;
+}
+
+.download-badges a {
+  text-decoration: none;
+}
+
+.store-badge {
+  width: 170px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.store-badge:hover {
+  transform: scale(1.2); /* Makes the badge 10% bigger */
+}
+
+
+.products-header h1,
+.rankify-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.products-header p,
+.rankify-header .intro-text {
+  font-size: 1.2rem;
+}
+
+/* Product Logos Section */
+.product-logos-section {
+  background: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.product-logos-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.product-logo {
+  max-width: 240px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.product-logo:hover {
+  transform: scale(1.1);
+}
+
+.product-name {
+  font-size: 1.1rem;
+  color: #ff750d;
+  font-weight: bold;
+}
+
+/* Download Badges */
+.download-badges {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download-badges .google-store-badge {
+  height: 80px;
+}
+.download-badges .apple-store-badge {
+  height: 90px;
+}
+
+/* Ratings */
+.ratings {
+  font-size: 1.1rem;
+}
+
+.rating-stars {
+  color: #ffd700;
+}
+
+.rating-text,
+.download-count {
+  color: white;
+}
+
+/* Rankify Hero Section */
+.rankify-hero {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.rankify-logo {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* App Highlights */
+.app-highlights {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.app-highlights h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.app-highlights ul {
+  padding: 0;
+  list-style: none;
+}
+
+.app-highlights ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Feature & Testimonial Cards */
+.feature-card,
+.testimonial-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: 10px 0;
+}
+
+.feature-card:hover,
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-card .card-title {
+  font-size: 1.25rem;
+  color: #ea4265;
+}
+
+.feature-description,
+.testimonial-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.testimonial-author {
+  font-size: 0.9rem;
+  color: #ea4265;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(90deg, #ea4265, #ff750d);
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section .cta-text {
+  font-size: 1.2rem;
+}
+
+/* Download Button */
+.btn-download {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-container,
+  .rankify-container {
+    padding: 20px;
+  }
+
+  .products-header h1,
+  .rankify-header h1 {
+    font-size: 2rem;
+  }
+
+  .products-header p,
+  .rankify-header .intro-text {
+    font-size: 1rem;
+  }
+
+  .product-logo {
+    max-width: 150px;
+  }
+
+  .download-badges {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .app-highlights h2,
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .app-highlights ul li,
+  .feature-description,
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-header h1,
+  .rankify-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .products-header p,
+  .rankify-header .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .product-logo {
+    max-width: 120px;
+  }
+
+  .app-highlights h2,
+  .cta-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .app-highlights ul li,
+  .feature-description,
+  .testimonial-text {
+    font-size: 0.8rem;
+  }
+
+  .btn-download {
+    font-size: 0.9rem;
+  }
+}
