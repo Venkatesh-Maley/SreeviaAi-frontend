@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
   <loc>https://www.sreeviaai.com/</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
 </url>
 <url>
   <loc>https://www.sreeviaai.com/services</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
+</url>
+<url>
+  <loc>https://www.sreeviaai.com/products</loc>
+  <priority>0.5</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2025-03-23</lastmod>
 </url>
 <url>
   <loc>https://www.sreeviaai.com/news</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
 </url>
 <url>
   <loc>https://www.sreeviaai.com/careers</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
 </url>
 <url>
   <loc>https://www.sreeviaai.com/about</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
 </url>
 <url>
   <loc>https://www.sreeviaai.com/connect</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
-</url>
-<url>
-  <loc>https://www.sreeviaai.com/ https://www.facebook.com/sreeviaai/</loc>
-  <priority>0.5</priority>
-  <changefreq>weekly</changefreq>
-  <lastmod>2025-02-03</lastmod>
+  <lastmod>2025-03-23</lastmod>
 </url>
 </urlset>
