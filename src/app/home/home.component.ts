@@ -33,7 +33,7 @@ export class HomeComponent {
 
   ngOnInit(): void {
 
-    this.seoService.updateCanonicalUrl('https://www.sreeviaai.com');
+    this.seoService.updateCanonicalUrl('https://www.sreeviaai.com/');
 
     this.animateNumber('projectsCompleted', this.targetProjects, 10);
     this.animateNumber('clientsTrusted', this.targetClients, 10);
