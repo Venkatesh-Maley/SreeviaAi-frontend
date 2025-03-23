@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SeoService } from '../seo-service/seo.service';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +23,18 @@ export class HomeComponent {
   // Add index signature to the class to allow dynamic property access
   [key: string]: any;
 
+  constructor(private meta: Meta, private title: Title, private seoService: SeoService) {
+    // Add metadata for SEO
+    this.title.setTitle('SreeVia AI Technologies');
+    this.meta.updateTag({ name: 'description', content: 'SreeVia AI offers cutting-edge AI solutions for various industries, enhancing efficiency and innovation.' });
+    this.meta.updateTag({ name: 'keywords', content: 'AI, Artificial Intelligence, AI Solutions, Industry AI, SreeVia AI' });
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+  }
+
   ngOnInit(): void {
+
+    this.seoService.updateCanonicalUrl('https://www.sreeviaai.com');
+
     this.animateNumber('projectsCompleted', this.targetProjects, 10);
     this.animateNumber('clientsTrusted', this.targetClients, 10);
     this.animateNumber('employeesCount', this.targetEmployees, 10);
