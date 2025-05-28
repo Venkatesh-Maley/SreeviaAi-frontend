@@ -13,6 +13,7 @@ import { ProductsComponent } from './products/products.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RefundComponent } from './refund/refund.component';
+import { ServiceReadMoreComponent } from './service-read-more/service-read-more.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -26,8 +27,10 @@ export const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
 
     { path: 'terms', component: TermsComponent },
-  { path: 'privacy', component: PrivacyComponent },
-  { path: 'refund', component: RefundComponent },
+    { path: 'privacy', component: PrivacyComponent },
+    { path: 'refund', component: RefundComponent },
+    { path: 'services/readmore', component: ServiceReadMoreComponent },
+
 
     { path: '404', component: PageNotFoundComponent },
     { path: '**', redirectTo: '/404' } 
