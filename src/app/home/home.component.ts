@@ -15,10 +15,10 @@ export class HomeComponent {
   employeesCount = 0;
   projectsCount =0;
 
-  targetProjects = 100;
-  targetClients = 120;
-  targetEmployees = 100;
-  targetLaunch = 30;
+  targetProjects = 10;
+  targetClients = 10;
+  targetEmployees = 20;
+  targetLaunch = 3;
 
   // Add index signature to the class to allow dynamic property access
   [key: string]: any;
