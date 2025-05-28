@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { SeoService } from '../seo-service/seo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news',
@@ -11,7 +12,7 @@ import { SeoService } from '../seo-service/seo.service';
   styleUrl: './news.component.css'
 })
 export class NewsComponent implements OnInit {
-  constructor(private meta: Meta, private title: Title, private seoService: SeoService) {
+  constructor(private meta: Meta, private title: Title, private seoService: SeoService, private router: Router) {
     this.title.setTitle('Latest AI News | SreeVia AI Updates & Innovations');
 
     this.meta.updateTag({ name: 'description', content: 'Stay updated with the latest AI advancements, innovations, and strategic partnerships from SreeVia AI Technologies. Explore news and events now.' });
@@ -48,5 +49,9 @@ export class NewsComponent implements OnInit {
     } else {
       this.visiblePosts = this.posts.slice(0, 3); // Show only first 3 posts
     }
+  }
+
+  goToDetails(): void {
+    this.router.navigate(['/news/readmore']);
   }
 }

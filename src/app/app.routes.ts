@@ -14,6 +14,7 @@ import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RefundComponent } from './refund/refund.component';
 import { ServiceReadMoreComponent } from './service-read-more/service-read-more.component';
+import { NewsDetailsComponent } from './news-details/news-details.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent }, 
@@ -30,7 +31,7 @@ export const routes: Routes = [
     { path: 'privacy', component: PrivacyComponent },
     { path: 'refund', component: RefundComponent },
     { path: 'services/readmore', component: ServiceReadMoreComponent },
-
+    { path: 'news/readmore', component: NewsDetailsComponent },
 
     { path: '404', component: PageNotFoundComponent },
     { path: '**', redirectTo: '/404' } 
