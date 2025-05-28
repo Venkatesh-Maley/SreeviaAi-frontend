@@ -214,20 +214,6 @@ body {
   overflow: hidden;
 }
 
-.enterprise-challenges .challenge-box:hover {
-  background: #fff;
-  color: transparent;
-}
-
-.enterprise-challenges .challenge-box:hover .challenge-icon,
-.enterprise-challenges .challenge-box:hover .challenge-title,
-.enterprise-challenges .challenge-box:hover .challenge-text {
-  background: linear-gradient(135deg, #ea4265, #ff750d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-}
-
 .enterprise-challenges .challenge-box:hover .challenge-icon {
   transform: rotate(360deg);
 }
