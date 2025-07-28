@@ -26,7 +26,7 @@ export class CareersComponent implements OnInit  {
 
   // Job data (For demonstration, you can replace this with your actual data)
   jobs = [
-    { title: 'Devops Engineer', location: 'Hyderabad', type: 'Remote /Full-Time/ Freelancer', description: 'Experienced DevOps Engineer with experience in setting up and managing CI/CD pipelines, handling AWS infrastructure, automating tasks and deploying applications.',
+    { title: 'Devops Engineer', location: 'Hyderabad', type: 'Remote /Full-Time/ Freelancer', description: 'Experienced DevOps Engineer with experience in setting up CI/CD pipelines, handling AWS, automating and deploying applications.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
     },
     { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.',
