@@ -29,10 +29,10 @@ export class CareersComponent implements OnInit  {
     { title: 'Devops Engineer', location: 'Hyderabad', type: 'Remote /Full-Time/ Freelancer', description: 'Experienced DevOps Engineer with experience in setting up CI/CD pipelines, handling AWS, automating and deploying applications.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
     },
-    { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain web applications using Angular and Node.js.',
+    { title: 'Software Engineer', location: 'Hyderabad', type: 'Full-Time', description: 'Design, develop, and maintain web applications using Angular and Node.js with a focus on performance, usability, and scalability.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
      },
-    { title: 'IOS and Android developers', location: 'Hyderabad', type: 'Full-Time', description: 'Develop and maintain IOS and Android Applications',
+    { title: 'IOS and Android developers', location: 'Hyderabad', type: 'Full-Time', description: 'Build and maintain high-quality iOS and Android mobile apps, ensuring great performance, user experience, and platform compatibility.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLScCEhpFvlml6scBiIFDkRbOEHv67YfcztcqALgCixqxQ3GtNw/viewform'
     },
     { title: 'Data Scientist', location: 'Hyderabad', type: 'Full-Time', description: 'Analyze large datasets to derive actionable insights and build predictive models.',
